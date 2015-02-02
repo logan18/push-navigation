@@ -18,8 +18,7 @@ html {
 
 
 body{
-  background-image:url(background.png);
-  background-size:cover;
+  background-color: $background;
   font-family: 'Abel', sans-serif;
   color: $text-color;
   @include zero;
