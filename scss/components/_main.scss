@@ -12,14 +12,15 @@ html {
 	text-size-adjust: 100%;
 }
 
-
 *, *:before, *:after {
 	box-sizing: inherit;
 }
 
 
 body{
-  font-family: sans-serif;
+  background-color: $background;
+  font-family: 'Abel', sans-serif;
+  font-color: $text-color;
   @include zero;
   // Hides close button if there is no js
   &.noscript .close-btn,
@@ -33,7 +34,6 @@ header {
   position: relative;
 }
 
-
 .toggle-btn{
   position:absolute;
   right:1em;
@@ -46,14 +46,23 @@ header {
       list-style-type:none;
       &:first-child 
       a{
-        border-top: 1px solid $light-grey;
+        border-top: 1px solid $blue;
+        border-radius: 3px;
+
       }//close li
       a{
+        background-color: $nav;
+        border-radius: 3px;
+        color: $text-color;
         display: block;
         padding: .5em 1em;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: .5rem;
         text-align: center;
-        border-bottom: 1px solid $light-grey;
+        border-bottom: 1px solid $blue;
         text-decoration: none;
+        &.hover{color:$blue;}
       }
       } //Close a
     } //Close nav ul
@@ -125,6 +134,33 @@ body.noscript .slide-menu{
   position: static;
   right: auto;
 }
+
+
+
+//----------------------CSS STYLING------------------------//
+
+
+h1{
+  color: $text-color;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
