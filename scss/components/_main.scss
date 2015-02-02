@@ -46,11 +46,11 @@ header {
       list-style-type:none;
       &:first-child 
       a{
-        border-top: 1px solid $blue;
         border-radius: 3px;
 
       }//close li
       a{
+        @include a-hover($text-color, $blue);
         background-color: $nav;
         border-radius: 3px;
         color: $text-color;
@@ -60,9 +60,8 @@ header {
         margin-right: 5%;
         margin-bottom: .5rem;
         text-align: center;
-        border-bottom: 1px solid $blue;
+        border: 3px solid $blue;
         text-decoration: none;
-        &.hover{color:$blue;}
       }
       } //Close a
     } //Close nav ul
