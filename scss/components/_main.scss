@@ -18,10 +18,10 @@ html {
 
 
 body{
-  background-image:url(../../images/background.png);
+  background-image:url(background.png);
   background-size:cover;
   font-family: 'Abel', sans-serif;
-  font-color: $text-color;
+  color: $text-color;
   @include zero;
   // Hides close button if there is no js
   &.noscript .close-btn,
